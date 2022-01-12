@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package randomPackage;
+
+message NumberRequest {
+  int32 maxValue = 1;
+}
+
+message NumberResponse {
+  int32 value = 1;
+}
+
+service Random {
+  rpc RandomNumbers( NumberRequest) returns (stream NumberResponse){};
+}
+
+ 

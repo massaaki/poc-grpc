@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package listPackage;
+
+message TodoRequest {
+  string todo = 1;
+  string status = 2;
+}
+
+message TodoResponse {
+  repeated TodoRequest todos = 1;
+}
+
+service List {
+  rpc TodoList(stream TodoRequest) returns(TodoResponse){};
+}
+
+ 
