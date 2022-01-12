@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "server": "ts-node-dev src/server",
+    "client": "ts-node-dev src/client"
   },
   "private": true,
   "devDependencies": {
