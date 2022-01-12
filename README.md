@@ -26,9 +26,21 @@
 
 <h2>Generate Types</h2>
 
+<h3>Examples 1 to 3</h3>
+
 ```bash
 yarn proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=proto/ proto/*.proto
 ```
+
+<h3>Example 4</h3>
+
+```bash
+yarn proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=src/contracts/ src/contracts/*.proto
+```
+
+
+
+
 
 <h2>Getting Started</h2>
 
