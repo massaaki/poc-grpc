@@ -39,12 +39,14 @@ yarn proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=src/contracts/ src/
 ```
 
 
-
-
-
 <h2>Getting Started</h2>
+<p>enter in a folder, and start the server and clinent running these following commands:</p>
 
 ```bash
 yarn start #starts the server
 yarn client #starts the client
 ```
+
+<p>In the example 04 (bidirecional streaming) you need to pass a parameter(username) to the client, and you can start how many clients do you want(or your pc support)</p>
+
+<img src="./images/bidirecional-streaming-example.png"/>

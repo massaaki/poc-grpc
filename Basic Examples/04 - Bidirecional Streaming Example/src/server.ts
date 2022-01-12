@@ -29,6 +29,7 @@ function configServer() {
         call.on("data", (request) => {
           const username = call.metadata.get('username')[0] as string;
           const message = request.message;
+          console.log(username, message);
 
           for (let [user, usersCall] of callObjByUsername) {
             if (username !== user) {
@@ -52,6 +53,8 @@ function configServer() {
             message: `End message ${username}`
           })
 
+          console.log(`${username} ended the chat session`);
+
           call.end();
         });
       }
@@ -68,6 +71,7 @@ function main() {
       console.log('Error to start the server ', error);
     }
     console.log("Server is running on port ", port);
+    server.start();
   })
 };
 main();
